@@ -87,7 +87,7 @@ def terminate_ec2():
 @app.route('/', methods = ['GET'])
 def home():
     if(request.method == 'GET'):
-       return redirect(url_for('list_buckets')) 
+       return 'Home Page'
 
 if __name__ == '__main__':
     app.run(debug = True)
